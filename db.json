@@ -1,0 +1,149 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ally",
+      "school": "Washington High School",
+      "status": "Student",
+      "interests": [
+        "Home Economics",
+        "Art"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Billy",
+      "school": "Adams High School",
+      "status": "Student",
+      "interests": [
+        "Community Service"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Carrie",
+      "school": "Jefferson High School",
+      "status": "Student",
+      "interests": [
+        "Wood Shop",
+        "Track & Field"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Daisy",
+      "school": "Madison High School",
+      "status": "Student",
+      "interests": [
+        "Track & Field",
+        "Band"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Eddy",
+      "school": "Monroe High School",
+      "status": "Parent",
+      "interests": [
+        "Wood Shop",
+        "Art",
+        "History"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Freddy",
+      "school": "Quincy Adams High School",
+      "status": "Parent",
+      "interests": [
+        "Football",
+        "Robotics"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Leadership Workshop",
+      "description": "Learn how to be a leader!",
+      "interests": "Leadership"
+    },
+    {
+      "id": 2,
+      "title": "Luncheon",
+      "description": "Meet other students in the area!",
+      "interests": "General"
+    },
+    {
+      "id": 3,
+      "title": "Sports Outing",
+      "description": "Come talk about sports techniques!",
+      "interests": "Sports"
+    },
+    {
+      "title": "Pick Up Trash",
+      "description": "Clean up the city!",
+      "interest_ids": [
+        4
+      ],
+      "id": 4
+    },
+    {
+      "title": "Learn Javascript",
+      "description": "Come learn about coding in javascript",
+      "date": "",
+      "interest_ids": [
+        7
+      ],
+      "organizer_ids": [],
+      "id": 5
+    },
+    {
+      "title": "Learn Ruby",
+      "description": "Ruby Ruby Ruby",
+      "interest_ids": [
+        7
+      ],
+      "organizer_ids": [],
+      "id": 6
+    }
+  ],
+  "interests": [
+    {
+      "id": 1,
+      "name": "Leadership"
+    },
+    {
+      "id": 2,
+      "name": "General"
+    },
+    {
+      "id": 3,
+      "name": "Sports"
+    },
+    {
+      "id": 4,
+      "name": "Community Service"
+    },
+    {
+      "id": 5,
+      "name": "Track & Field"
+    },
+    {
+      "id": 6,
+      "name": "Band"
+    },
+    {
+      "id": 7,
+      "name": "Coding"
+    },
+    {
+      "id": 8,
+      "name": "Art"
+    },
+    {
+      "id": 9,
+      "name": "Home Economics"
+    }
+  ]
+}
