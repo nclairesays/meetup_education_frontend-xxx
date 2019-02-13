@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 // import Events from './Events'
 // import EventsContainer from './EventsContainer';
 import EventsList from './EventsList';
 import EventForm from './EventForm';
 import EventPage from './EventPage';
+import PublicHomePage from './PublicHomePage'
 
 
 
@@ -12,7 +13,7 @@ class App extends Component {
 
   state = {
     users: [],
-    events: []
+    loggedIn: false
   }
 
   // componentDidMount(){
@@ -36,13 +37,20 @@ class App extends Component {
        <BrowserRouter>
             <div className="container">
                 <Switch>
+                  
                     <Route exact path="/events" component={EventsList} />
                     <Route path="/events/new" component={EventForm} />                    
                     <Route path="/events/:id/edit" component={EventForm}/>
                     <Route path="/events/:id" component={EventPage} />
                    
-                    <Route path="/login" component={EventForm} />     
-                    {/* <Route path="/users/:id" component={Event} /> */}
+                    <Route path="/login" component={PublicHomePage} />  
+                    <Route exact path="/" render={() => (
+                      this.state.loggedIn 
+                      ? ( <Redirect to="/events"/> ) 
+                      : ( <PublicHomePage /> )
+                    )}/>
+
+                    {/* <Route path="/users/:id" component={Dashboard} /> */}
                        
                 </Switch>
             </div>
